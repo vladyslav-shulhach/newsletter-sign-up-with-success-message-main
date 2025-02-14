@@ -1,0 +1,17 @@
+.banner__image {
+  width: 100%;
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner__image {
+    &--mobile {
+      display: none;
+    }
+    &--desktop {
+      display: block;
+    }
+  }
+}

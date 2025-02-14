@@ -1,0 +1,16 @@
+@use "../base/variables" as *;
+
+input {
+  width: 100%;
+  border: 1px solid $grey-color;
+  border-radius: 7px;
+  padding: 1.25rem;
+  color: $dark-slate-grey-color;
+  transition: 200ms ease-out;
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px $dark-slate-grey-color;
+    transition: 200ms ease-out;
+  }
+}
