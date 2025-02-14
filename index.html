@@ -90,6 +90,11 @@
         <form id="form" class="signup-form__form" novalidate>
           <div class="signup-form__group">
             <label for="email" class="signup-form__label">Email address</label>
+            <span
+              aria-live="polite"
+              id="email-error"
+              class="signup-form__error"
+            ></span>
             <input
               id="email"
               name="email"
@@ -97,11 +102,6 @@
               class="signup-form__input"
               placeholder="email@company.com"
             />
-            <span
-              aria-live="polite"
-              id="email-error"
-              class="signup-form__error"
-            ></span>
           </div>
           <button class="signup-form__button">
             Subscribe to monthly newsletter

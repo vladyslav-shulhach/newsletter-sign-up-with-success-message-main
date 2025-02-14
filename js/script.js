@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
   
     function showError(input, errorElement, message) {
       errorElement.textContent = message;
-      input.classList.add("input--error");
+      input.classList.add("signup-form__input--error");
     }
   
     function clearError(input, errorElement) {
       errorElement.textContent = "";
-      input.classList.remove("input--error");
+      input.classList.remove("signup-form__input--error");
     }
   });
   

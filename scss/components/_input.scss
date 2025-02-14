@@ -1,16 +1,24 @@
 @use "../base/variables" as *;
 
-input {
+.signup-form__input {
   width: 100%;
   border: 1px solid $grey-color;
   border-radius: 7px;
-  padding: 1.25rem;
+  padding: 1rem;
   color: $dark-slate-grey-color;
   transition: 200ms ease-out;
 
   &:focus {
     border-color: transparent;
     box-shadow: 0 0 0 2px $dark-slate-grey-color;
+    background-color: $white-color;
+    transition: 200ms ease-out;
+  }
+
+  &--error {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px $red-color;
+    background-color: $light-red-color;
     transition: 200ms ease-out;
   }
 }

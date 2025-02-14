@@ -1,6 +1,10 @@
 .subscription-info {
   padding: 2rem 1.5rem;
 
+  &__description {
+    margin-top: 1rem;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
