@@ -1,4 +1,34 @@
+@use "../base/variables" as *;
+
 footer {
   margin-top: 1rem;
   padding: 1rem;
+}
+
+@media (min-width: map-get($breakpoints, "tablet")) {
+  body {
+    background-color: $charcoal-grey-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  main {
+    padding: 1.5rem;
+    background-color: $white-color;
+    width: 36rem;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: map-get($breakpoints, "desktop")) {
+  main {
+    width: 58.5rem;
+    display: flex;
+    .banner {
+      order: 1;
+    }
+  }
 }

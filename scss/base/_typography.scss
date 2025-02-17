@@ -19,3 +19,19 @@ label,
   font-weight: 700;
   font-size: 0.75rem;
 }
+
+footer {
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (min-width: map-get($breakpoints, "tablet")) {
+  footer {
+    color: $white-color;
+    a {
+      color: $white-color;
+      text-decoration: underline;
+    }
+  }
+}

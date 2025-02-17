@@ -1,7 +1,6 @@
 @use "../base/variables" as *;
 
 .signup-form {
-  padding: 0 1.5rem;
   &__form {
     display: flex;
     flex-direction: column;

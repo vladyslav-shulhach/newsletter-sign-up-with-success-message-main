@@ -1,11 +1,22 @@
+@use "../base/variables" as *;
+
 .banner__image {
   width: 100%;
+  max-height: 17.5rem;
+  object-fit: cover;
+  border-radius: 0 0 16px 16px;
   &--desktop {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: map-get($breakpoints, "tablet")) {
+  .banner__image {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: map-get($breakpoints, "desktop")) {
   .banner__image {
     &--mobile {
       display: none;

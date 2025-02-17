@@ -29,9 +29,6 @@
         font-size: 11px;
         text-align: center;
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
     </style>
   </head>
   <body>
@@ -84,29 +81,31 @@
             <p class="subscription-info__list-item-text">And much more!</p>
           </li>
         </ul>
-      </section>
-      <!-- Sign Up Form -->
-      <section class="signup-form">
-        <form id="form" class="signup-form__form" novalidate>
-          <div class="signup-form__group">
-            <label for="email" class="signup-form__label">Email address</label>
-            <span
-              aria-live="polite"
-              id="email-error"
-              class="signup-form__error"
-            ></span>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              class="signup-form__input"
-              placeholder="email@company.com"
-            />
-          </div>
-          <button class="signup-form__button">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
+        <!-- Sign Up Form -->
+        <div class="signup-form">
+          <form id="form" class="signup-form__form" novalidate>
+            <div class="signup-form__group">
+              <label for="email" class="signup-form__label"
+                >Email address</label
+              >
+              <span
+                aria-live="polite"
+                id="email-error"
+                class="signup-form__error"
+              ></span>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="signup-form__input"
+                placeholder="email@company.com"
+              />
+            </div>
+            <button class="signup-form__button">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
       </section>
       <!-- Success Message -->
       <section class="success-message">

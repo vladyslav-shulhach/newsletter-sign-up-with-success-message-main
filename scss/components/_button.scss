@@ -7,4 +7,10 @@ button {
   font-weight: 700;
   padding: 1rem 2.75rem;
   border-radius: 7px;
+  transition: 200ms ease-out;
+
+  &:hover {
+    background-color: $hover-dark-slate-grey-color;
+    transition: 200ms ease-out;
+  }
 }
