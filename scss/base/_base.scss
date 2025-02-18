@@ -19,16 +19,25 @@ footer {
     background-color: $white-color;
     width: 36rem;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 32px;
   }
 }
 
 @media (min-width: map-get($breakpoints, "desktop")) {
   main {
-    width: 58.5rem;
+    width: 58.125rem;
+    height: 40.25rem;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     .banner {
       order: 1;
     }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    margin-top: 0;
   }
 }

@@ -35,3 +35,11 @@ footer {
     }
   }
 }
+
+@media (min-width: map-get($breakpoints, "desktop")) {
+  h1,
+  h2 {
+    font-weight: 700;
+    font-size: 3.4rem;
+  }
+}

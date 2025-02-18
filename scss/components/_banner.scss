@@ -12,12 +12,14 @@
 
 @media (min-width: map-get($breakpoints, "tablet")) {
   .banner__image {
-    border-radius: 0;
+    border-radius: 16px;
   }
 }
 
 @media (min-width: map-get($breakpoints, "desktop")) {
   .banner__image {
+    height: 100%;
+    max-height: 100%;
     &--mobile {
       display: none;
     }

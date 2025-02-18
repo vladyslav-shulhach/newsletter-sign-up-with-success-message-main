@@ -1,16 +1,34 @@
 @use "../base/variables" as *;
 
 button {
+  position: relative;
   width: 100%;
   background-color: $dark-slate-grey-color;
-  color: $white-color;
   font-weight: 700;
   padding: 1rem 2.75rem;
   border-radius: 7px;
-  transition: 200ms ease-out;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, $salmon-color, $tomato-color);
+    opacity: 0;
+    transition: all 200ms ease-out;
+  }
 
   &:hover {
-    background-color: $hover-dark-slate-grey-color;
-    transition: 200ms ease-out;
+    box-shadow: 0 10px 28px $tomato-color; // Soft glow effect
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  span {
+    position: relative; // Ensures text stays above the gradient
+    color: $white-color;
+    z-index: 1;
   }
 }
