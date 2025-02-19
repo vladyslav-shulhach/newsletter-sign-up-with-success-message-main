@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("email");
   const emailError = document.getElementById("email-error");
 
-  const subscriptionSection = document.querySelector(".subscription-info");
+  const subscriptionSection = document.querySelector(".content");
   const successMessage = document.querySelector(".success-message");
   const dismissButton = document.querySelector(".success-message__button");
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showSuccessMessage() {
     subscriptionSection.style.display = "none"; // Hide subscription section
-    successMessage.style.display = "block"; // Show success message
+    successMessage.style.display = "grid"; // Show success message
   }
 
   dismissButton.addEventListener("click", function () {
