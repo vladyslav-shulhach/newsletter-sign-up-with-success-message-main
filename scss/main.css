@@ -43,9 +43,15 @@ textarea {
   background: transparent;
 }
 
+.hidden {
+  display: none !important;
+}
+
 footer {
   margin-top: 1rem;
   padding: 1rem;
+  font-size: 11px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -254,8 +260,7 @@ button span {
 }
 
 .success-message {
-  display: none;
-  width: 31.625rem;
+  display: grid;
   padding: 2.875rem 4rem 4rem 4rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 32px;
@@ -266,4 +271,10 @@ button span {
 }
 .success-message .success-message__text {
   margin-top: -1rem;
+}
+
+@media (min-width: 768px) {
+  .success-message {
+    width: 31.625rem;
+  }
 }/*# sourceMappingURL=main.css.map */

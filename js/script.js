@@ -7,9 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const successMessage = document.querySelector(".success-message");
   const dismissButton = document.querySelector(".success-message__button");
 
-  // Hide the success message initially
-  successMessage.style.display = "none";
-
   form.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission
 
@@ -40,12 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showSuccessMessage() {
-    subscriptionSection.style.display = "none"; // Hide subscription section
-    successMessage.style.display = "grid"; // Show success message
+    subscriptionSection.classList.add("hidden");
+    successMessage.classList.remove("hidden");
   }
 
   dismissButton.addEventListener("click", function () {
-    successMessage.style.display = "none"; // Hide success message
-    subscriptionSection.style.display = "block"; // Show subscription form again
+    successMessage.classList.add("hidden");
+    subscriptionSection.classList.remove("hidden");
   });
 });

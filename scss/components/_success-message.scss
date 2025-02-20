@@ -1,8 +1,7 @@
 @use "../base/variables" as *;
 
 .success-message {
-  display: none;
-  width: 31.625rem;
+  display: grid;
   padding: 2.875rem 4rem 4rem 4rem;
   background-color: $white-color;
   border-radius: 32px;
@@ -13,4 +12,10 @@
     margin-top: -1rem;
   }
   gap: 2.5rem;
+}
+
+@media (min-width: map-get($breakpoints, "tablet")) {
+  .success-message {
+    width: 31.625rem;
+  }
 }
